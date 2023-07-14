@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!--  上下文名称  -->
+    <display-name>Servlet + JSP</display-name>
+
+
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>default</servlet-name>-->
+<!--        <url-pattern>*.svg</url-pattern>-->
+<!--        <url-pattern>*.html</url-pattern>-->
+<!--        <url-pattern>*.js</url-pattern>-->
+<!--        <url-pattern>*.css</url-pattern>-->
+<!--        <url-pattern>*.jpg</url-pattern>-->
+<!--        <url-pattern>*.png</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+    <!--  定义错误页面  -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/errorPage/404.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/WEB-INF/errorPage/500.jsp</location>
+    </error-page>
+</web-app>

@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/*-----------------按钮-----------------*/
+button {
+    background-color: #0085ff;
+    color: white;
+    /*不需要边框*/
+    border-style: none;
+    /*圆角*/
+    border-radius: 5px;
+    /*内边距*/
+    padding: 5px 15px;
+}
+
+/*鼠标经过*/
+button:hover {
+    background-color: #4ea6fa;
+}
+
+/*按下未弹起*/
+button:active {
+    background-color: #0085ff;
+}
+
+/*----------*/
+.success {
+    background-color: #21e51a;
+}
+
+.success:hover {
+    background-color: #25f51c;
+}
+
+.success:active {
+    background-color: #21e51a;
+}
+
+/*----------*/
+.danger {
+    background-color: #fc4545;
+}
+
+.danger:hover {
+    background-color: #f56d6d;
+}
+
+.danger:active {
+    background-color: #fc4545;
+}
+
+/*----------*/
+.info {
+    background-color: white;
+    border: 1px solid #bdbdc4;
+    color: #606266;
+}
+
+.info:hover {
+    background-color: #d8eafd;
+    color: #0082ff;
+    border: 1px solid #d8eafd;
+}
+
+.info:active {
+    border: 1px solid #0082ff;
+}
+
+/*-----------------输入框、选择框-----------------*/
+
+input, select {
+    height: 30px;
+    color: #717171;
+    margin: 0 5px;
+    /*圆角*/
+    border-radius: 5px;
+    /*边框*/
+    border: 1px solid #bdbdc4;
+}
+
+/*获得焦点*/
+input:focus, select:focus {
+    /*去掉轮廓、不然看不到蓝色边框*/
+    outline: none;
+    border: 1px solid #0080ff;
+}
+
+/*-----------------表格-----------------*/
+
+table {
+    /*相邻边框线合并*/
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table tr:hover {
+    /*选中行变色*/
+    background-color: #f1f1f1;
+}
+
+/*表头单元格*/
+table th {
+    font-size: 14px;
+    height: 40px;
+    background-color: #e4e4ea;
+    color: #525B6FFF;
+}
+
+/*数据单元格*/
+table td {
+    height: 40px;
+    /*上边框*/
+    border-top: 1px solid #d9d9de;
+    /*下边框*/
+    border-bottom: 1px solid #d9d9de;
+    text-align: center;
+}
+
+/*-----------------分页-----------------*/
+
+.page {
+    height: 50px;
+    color: #525b6f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.page input {
+    width: 50px;
+}
+
+.page select {
+    margin: 0 5px;
+}
+
+.page button {
+    margin: 0 5px;
+    background-color: #f4f4f5;
+    color: #525b6f;
+}
+
+.page button:hover {
+    color: #0080ff;
+}

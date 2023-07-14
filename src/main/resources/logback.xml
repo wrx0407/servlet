@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--日志格式配置-->
+    <property name="pattern"
+              value="%d{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) [%15.15t] %cyan(%-40.40logger{39}) : %m%n"/>
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${pattern}</pattern>
+        </encoder>
+    </appender>
+    <!--  禁用c3p0日志  -->
+    <logger name="com.mchange" level="OFF">
+        <appender-ref ref="console"/>
+    </logger>
+    <!-- 顶层输出级别 -->
+    <root level="INFO">
+        <appender-ref ref="console"/>
+    </root>
+</configuration>
